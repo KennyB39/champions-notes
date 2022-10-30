@@ -6,8 +6,8 @@ const app = express();
 const fs = require('fs');
 const path = require('path');
 
-const apiRoutes = require( '../apiroutes.js');
-const apiRoutes = require('./htmlRoutes');
+const apiRoutes = require( '../../apiRoutes/');
+const htmlRoutes = require('./htmlRoutes');
 
 app.use(express.urlencoded({
     extended: true
