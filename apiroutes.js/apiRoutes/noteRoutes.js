@@ -12,7 +12,7 @@ router.post('/notes', (req, res) =>{
     res.json(note);
 })
 
-router.delete('/notes/id', (req,res) => {
+router.delete('/notes/:id', (req,res) => {
     noteDeleteNote(notes, req.params.id);
     res.json(notes);
 })
